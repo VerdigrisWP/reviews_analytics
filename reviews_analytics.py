@@ -15,3 +15,11 @@ for data in rws_data:
 	if len(data) < 100:
 		rws_100.append(data)
 print('留言長度小於 100 的共有', len(rws_100), '筆')
+
+#篩選內含 'good' 的留言
+rws_good = []
+for data in rws_data:
+	if 'good' in data:
+		rws_good.append(data)
+print('內含‘good‘的留言共有', len(rws_good), '筆')
+print(rws_good[0])
